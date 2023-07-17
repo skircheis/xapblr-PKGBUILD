@@ -39,6 +39,11 @@ build() {
     python -m build --wheel --no-isolation
 }
 
+prepare() {
+    # Clean out old wheels etc.
+    git -C "${pkgname%-git}" clean -dfx
+}
+
 package() {
     cd "${_pkgname}"
     python -m installer --destdir="$pkgdir" dist/*.whl
