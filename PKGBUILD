@@ -2,7 +2,7 @@
 
 _pkgname=xapblr
 pkgname="${_pkgname}"-git
-pkgver=0.1.0.r24.g737a717
+pkgver=0.1.1.r0.g5e8ac80
 pkgrel=1
 pkgdesc="Locally index Tumblr blogs in a xapian database for advanced searching"
 url='http://github.com/skircheis/xapblr.git'
@@ -51,4 +51,7 @@ package() {
     mkdir -p "$pkgdir/usr/lib/systemd/user"
     install -Dm644 systemd/user/* \
         "$pkgdir/usr/lib/systemd/user"
+    mkdir -p "$pkgdir/etc/uwsgi"
+    install -Dm644 config/uwsgi/xapblr.ini \
+        "$pkgdir/etc/uwsgi"
 }
