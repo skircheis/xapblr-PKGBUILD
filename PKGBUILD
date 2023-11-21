@@ -10,11 +10,12 @@ arch=('any')
 license=('MIT')
 depends=(
     'python>=3.8'
-    'python-pytumblr'
+    'python-pytumblr2'
     'python-xapian'
     'python-flask'
     'python-flask-assets'
     'python-dateparser'
+    'python-sqlalchemy>=2.0'
     'systemd'
     'uwsgi'
     'uwsgi-plugin-python'
@@ -27,7 +28,8 @@ makedepends=(
     'python-wheel'
 )
 optdepends=(
-    'python-transformers'
+    'python-open-clip-torch'
+    'python-humanfriendly'
 )
 conflicts=('xapblr')
 source=('git+https://github.com/skircheis/xapblr.git')
