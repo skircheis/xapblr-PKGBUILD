@@ -1,0 +1,30 @@
+pkgbase = xapblr-git
+	pkgdesc = Locally index Tumblr blogs in a xapian database for advanced searching
+	pkgver = 0.5.0.r3.gc2b67e8
+	pkgrel = 1
+	url = http://github.com/skircheis/xapblr.git
+	arch = any
+	license = MIT
+	makedepends = python-setuptools
+	makedepends = python-versioningit
+	makedepends = python-setuptools-git
+	makedepends = python-wheel
+	depends = python>=3.8
+	depends = python-pytumblr2
+	depends = python-xapian
+	depends = python-flask
+	depends = python-flask-assets
+	depends = python-dateparser
+	depends = python-sqlalchemy>=2.0
+	depends = systemd
+	depends = uwsgi
+	depends = uwsgi-plugin-python
+	depends = dart-sass
+	optdepends = python-open-clip-torch
+	optdepends = python-humanfriendly
+	provides = xapblr=0.5.0.r3.gc2b67e8
+	conflicts = xapblr
+	source = git+https://github.com/skircheis/xapblr.git
+	sha256sums = SKIP
+
+pkgname = xapblr-git
