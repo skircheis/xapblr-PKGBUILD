@@ -18,10 +18,16 @@ depends=(
     'systemd'
     'uwsgi'
     'uwsgi-plugin-python'
+    'dart-sass'
 )
 makedepends=(
     'python-setuptools'
+    'python-versioningit'
+    'python-setuptools-git'
     'python-wheel'
+)
+optdepends=(
+    'python-transformers'
 )
 conflicts=('xapblr')
 source=('git+https://github.com/skircheis/xapblr.git')
