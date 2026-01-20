@@ -2,8 +2,8 @@
 
 _pkgname=xapblr
 pkgname="${_pkgname}"-git
-pkgver=0.5.0.r3.gc2b67e8
-pkgrel=1
+pkgver=0.5.0.r6.g5139045
+pkgrel=2
 pkgdesc="Locally index Tumblr blogs in a xapian database for advanced searching"
 url='http://github.com/skircheis/xapblr.git'
 arch=('any')
